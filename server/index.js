@@ -10,7 +10,7 @@ const io = new Server({
 });
 
 
-io.listen(8443);
+io.listen(8080);
 
 console.log("Server started on port 443, allowed cors origin: " + origin);
 
