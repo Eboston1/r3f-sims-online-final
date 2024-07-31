@@ -2,7 +2,7 @@ import fs from "fs";
 import pathfinding from "pathfinding";
 import { Server } from "socket.io";
 
-const origin = process.env.CLIENT_URL || "http://localhost:5173";
+const origin = process.env.CLIENT_URL || "http://localhost:8443";
 const io = new Server({
   cors: {
     origin,
@@ -10,7 +10,7 @@ const io = new Server({
 });
 
 
-io.listen(443);
+io.listen(8443);
 
 console.log("Server started on port 443, allowed cors origin: " + origin);
 
