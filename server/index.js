@@ -9,6 +9,7 @@ const io = new Server({
   },
 });
 
+
 io.listen(3000);
 
 console.log("Server started on port 3000, allowed cors origin: " + origin);
