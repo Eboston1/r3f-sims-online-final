@@ -10,9 +10,9 @@ const io = new Server({
 });
 
 
-io.listen(3000);
+io.listen(443);
 
-console.log("Server started on port 3000, allowed cors origin: " + origin);
+console.log("Server started on port 443, allowed cors origin: " + origin);
 
 // PATHFINDING UTILS
 
